@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skyline Airlines</title>
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body class="bg-black text-white">
+
+    <!-- Header -->
+    <header class="fixed top-0 left-0 w-full bg-[#111111] z-50 ">
+        <div class="flex justify-between items-center pl-2 pr-4 md:px-10 py-2">
+
+            <!-- Logo -->
+            <div class="flex items-center gap-2 transition duration-300 hover:scale-110">
+                <img src="images/logo.png" class="w-20 h-30 object-contain" alt="">
+                
+                <div class="flex items-center gap-2">
+                    <h1 class="text-[#078ff3] font-bold text-2xl">SkyLine</h1>
+                    <span class="bg-[#078ff3] text-white text-xs px-2 py-1 rounded-full ">
+                       Airlines
+                    </span>
+                </div>
+            </div>
+
+            <!-- Links -->
+            <ul class="hidden lg:flex gap-8">
+                <li><a href="#" class="text-white hover:text-[#078ff3]">Home</a></li>
+                <li><a href="#" class="text-white hover:text-[#078ff3]">Flights</a></li>
+                <li><a href="#" class="text-white hover:text-[#078ff3]">Destinations</a></li>
+                <li><a href="#" class="text-white hover:text-[#078ff3]">About Us</a></li>
+                <li><a href="#" class="text-white hover:text-[#078ff3]">Contact</a></li>
+            </ul>
+
+            <!-- Button -->
+            <button id="menuBtn" class="text-white text-2xl lg:hidden">
+             <i class="fa-solid fa-bars"></i>
+            </button>
+            <button class="hidden lg:block bg-[#078ff3] px-4 py-2 rounded-lg text-black hover:bg-[#056ec2]">
+              Book Now
+            </button>
+
+        </div>
+    </header>
+    <div id="mobileMenu" 
+     class="hidden fixed top-[60px] left-0 w-full bg-[#111111] text-white px-6 py-4 space-y-4 z-50 lg:hidden flex flex-col">
+      <a href="#" class="hover:text-[#056ec2]">Home</a>
+      <a href="#" class="hover:text-[#056ec2]">Flights</a>
+      <a href="#" class="hover:text-[#056ec2]">Destinations</a>
+      <a href="#" class="hover:text-[#056ec2]">About Us</a>
+      <a href="#" class="hover:text-[#056ec2]">Contact</a>
+        <button class="w-full bg-[#078ff3] py-3 rounded-lg text-black hover:bg-[#056ec2] transition duration-300">
+          Book Now
+        </button>
+    </div>
+
+    <!-- start section one -->
+
+    <!-- Hero Section -->
+    <section1 class=" pt-32 px-10 flex items-center">
+
+        <div class=" flex flex-col md:flex-col lg:flex-row items-center gap-6">
+
+            <!-- Text -->
+           <div class="space-y-6 md:space-y-8">
+                <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl  font-bold leading-tight ">
+                    Fly Beyond <br class="hidden md:block">
+                    <span class="text-[#078ff3]">Limits</span> 
+                    with Us
+                </h1>
+
+                <p class="mt-6 text-gray-400">
+                    We provide seamless travel experiences with comfort safety and premium service
+                    Discover the world with SkyLine Airlines and enjoy every journey.
+                </p>
+
+                
+              <div class="flex flex-col gap-6 md:gap-8 lg:gap-6  text-sm text-gray-400 md:flex-row md:gap-6">
+
+                <div class="flex items-center gap-2">
+                    <span class="bg-[#078ff3] text-black w-5 h-5 flex items-center justify-center rounded-full text-xs">
+                     <i class="fa-solid fa-check"></i>
+                    </span>
+                    <span>10+ Years Experience</span>
+                </div>
+
+               <div class="flex items-center gap-2">
+                    <span class="bg-[#078ff3] text-black w-5 h-5 flex items-center justify-center rounded-full text-xs">
+                     <i class="fa-solid fa-check"></i>
+                    </span>
+                   <span>+500 Flights</span>
+                </div>
+
+               <div class="flex items-center gap-2">
+                    <span class="bg-[#078ff3] text-black w-5 h-5 flex items-center justify-center rounded-full text-xs">
+                      <i class="fa-solid fa-check"></i>
+                    </span>
+                    <span>Premium Service</span>
+                </div>
+
+               </div>
+
+                <!-- Buttons -->
+                <div class="mt-6 flex flex-col gap-4 md:flex-row">
+                    <button class="w-full md:w-[220px] text-black bg-[#078ff3] px-5 py-3 rounded-lg hover:bg-[#056ec2]">
+                        Book a Flight
+                    </button>
+
+                    <button class="w-full md:w-[220px] border border-gray-500 px-5 py-3 rounded-lg
+                     hover:border-[#056ec2] hover:text-[#056ec2]">
+                        <i class="fa-solid fa-play"></i>
+                        Watch Video
+                    </button>
+                </div>
+            </div>
+
+            <!-- images -->
+            <div class="w-full max-w-[600px] mx-auto h-[300px] md:h-[350px] relative">
+
+              <img src="images/background image.jpeg" 
+              class="w-full h-full object-cover rounded-xl" alt="">
+
+                <!-- card -->
+                <div class="absolute -bottom-5 -left-5 bg-white text-black px-4 py-2
+                  rounded-lg shadow-lg flex items-center gap-2">
+                  <i class="fa-solid fa-users text-[#078ff3]"></i>
+                    <div>
+                     <p class="text-sm">Happy Travelers</p>
+                     <h3 class="font-bold text-lg">+500</h3>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section1>
+    <div class="bg-black h-20"></div>
+
+    <!-- end section one -->
+    
+    <!-- start section two -->
+    <section2 class="py-40 bg-black">
+
+        <!-- Title -->
+       <div class="text-center mb-12">
+          <h2 class="text-3xl font-bold mb-2">Our Airline Services</h2>
+
+           <p class="text-gray-500">
+             We provide the best aviation services to ensure safe and comfortable travel.
+            </p>
+
+           <div class="w-20 h-1 bg-[#078ff3] mx-auto mt-3"></div>
+        </div>
+
+        <!-- Cards -->
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-6">
+           <!-- Card 1 -->
+           <div class="bg-[#111111] p-6 rounded-xl border border-transparent md:hover:border-[#056ec2] transition group">
+                <div class="w-12 h-12 flex items-center justify-center bg-white rounded-lg mb-4 group-hover:bg-[#056ec2] transition">
+                  <i class="fa-solid fa-plane text-[#078ff3] text-xl group-hover:text-white text-xl transition"></i>
+                </div>
+
+                <h3 class="text-white font-semibold mb-2">Flight Booking</h3>
+
+                <p class="text-gray-500 mb-4">
+                  Book domestic and international flights easily and quickly.
+                </p>
+
+                <ul class="space-y-2 text-white/60">
+                   <li class="flex items-center gap-2"><i class="fa-solid fa-check text-[#078ff3]"></i>Easy Reservation</li>
+                   <li class="flex items-center gap-2"><i class="fa-solid fa-check text-[#078ff3]"></i> Best Prices</li>
+                   <li class="flex items-center gap-2"><i class="fa-solid fa-check text-[#078ff3]"></i> 24/7 Support</li>
+                </ul>
+            </div>
+
+            <!-- Card 2 -->
+           <div class="bg-[#111111] p-6 rounded-xl border border-transparent md:hover:border-[#056ec2] transition group">
+                <div class="w-12 h-12 flex items-center justify-center bg-purple-100 rounded-lg mb-4 group-hover:bg-[#056ec2] transition">
+                   <i class="fa-solid fa-suitcase text-[#078ff3] text-xl group-hover:text-white text-xl transition"></i>
+                </div>
+
+                <h3 class="text-white font-semibold mb-2">Baggage Services</h3>
+
+                <p class="text-gray-500 mb-4">
+                   Safe and secure baggage handling for all passengers.
+                </p>
+
+                <ul class="space-y-2 text-white/60">
+                   <li class="flex items-center gap-2"><i class="fa-solid fa-check text-[#078ff3]"></i> Secure Handling</li>
+                   <li class="flex items-center gap-2"><i class="fa-solid fa-check text-[#078ff3]"></i> Extra Baggage</li>
+                   <li class="flex items-center gap-2"><i class="fa-solid fa-check text-[#078ff3]"></i> Tracking System</li>
+                </ul>
+            </div>
+
+            <!-- Card 3 -->
+           <div class="bg-[#111111] p-6 rounded-xl border border-transparent md:hover:border-[#056ec2] transition group">
+                <div class="w-12 h-12 flex items-center justify-center bg-green-100 rounded-lg mb-4 group-hover:bg-[#056ec2] transition">
+                    <i class="fa-solid fa-plane-departure text-[#078ff3] text-xl group-hover:text-white text-xl transition"></i>
+                </div>
+
+                <h3 class="text-white font-semibold mb-2">Flight Management</h3>
+
+                <p class="text-gray-500 mb-4">
+                   Professional flight scheduling and modern aircraft services.
+                </p>
+
+                <ul class="space-y-2 text-white/60">
+                   <li class="flex items-center gap-2"><i class="fa-solid fa-check text-[#078ff3]"></i> On Time Flights</li>
+                   <li class="flex items-center gap-2"><i class="fa-solid fa-check text-[#078ff3]"></i> Modern Aircraft</li>
+                   <li class="flex items-center gap-2"><i class="fa-solid fa-check text-[#078ff3]"></i> Comfortable Travel</li>
+            
+                </ul>
+            </div>
+
+        </div>
+
+    </section2>
+    <div class="bg-black h-20"></div>
+
+    <!-- end section two -->
+    
+    <!-- start section three -->
+    <section3 class="py-20">
+
+        <div class="mt-30-  rounded-xl bg-[#111111] text-white  py-10">
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+            <!-- text -->
+            <div>
+                <h2 class="text-4xl font-bold mb-2">+500</h2>
+                <p class="text-white/80">Clients Worldwide</p>
+            </div>
+
+            
+            <div>
+                <h2 class="text-4xl font-bold mb-2">+1000</h2>
+                <p class="text-white/80">Flights Completed</p>
+            </div>
+
+            
+            <div>
+                <h2 class="text-4xl font-bold mb-2">+50</h2>
+                <p class="text-white/80">Aircraft Available</p>
+            </div>
+
+            
+            <div>
+                <h2 class="text-4xl font-bold mb-2">+10</h2>
+                <p class="text-white/80">Years of Experience</p>
+            </div>
+
+           </div>
+
+        </div>
+
+    </section3>
+    <div class="bg-black h-20"></div>
+    <!-- end section three -->
+
+    <!-- start section four -->
+    <section4 class="py-24 bg-black">
+
+        <!-- Title -->
+        <div class="text-center mb-16">
+          <h2 class="text-3xl font-bold mb-2">Our Modern Fleet</h2>
+
+            <p class="text-gray-500">
+                Explore our advanced aircraft and aviation technology.
+            </p>
+
+           <div class="w-20 h-1 bg-[#078ff3] mx-auto mt-3"></div>
+        </div>
+
+     <!-- Cards -->
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 px-6">
+
+           <!-- Card 1 -->
+            <div class="bg-[#111111] rounded-xl overflow-hidden group">
+
+                <!-- Image -->
+                <div class="relative">
+
+                  <img src="images/fleet1.jpeg"
+                  class="w-full h-56 object-cover border-0 outline-none">
+
+                    
+                    <div class="absolute inset-0 bg-black/90
+                       flex items-center justify-center gap-4 
+                       opacity-0 group-hover:opacity-100 transition duraion-300">
+
+                        <a href="#" class="bg-white text-[#078ff3] w-8 h-8 flex items-center justify-center rounded-full transition hover:bg-[#056ec2] hover:text-white">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+
+                        <a href="#" class="bg-white text-[#078ff3] w-8 h-8 flex items-center justify-center rounded-full transition hover:bg-blue-500 hover:text-white">
+                          <i class="fa-brands fa-twitter"></i>
+                        </a>
+
+                        <a href="#" class="bg-white text-[#078ff3] w-8 h-8 flex items-center justify-center rounded-full transition hover:bg-blue-500 hover:text-white">
+                          <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+               <!-- Content -->
+                <div class="p-6 text-center">
+
+                    <h3 class="font-semibold text-lg">
+                        Boeing 737
+                    </h3>
+
+                    <p class="text-[#078ff3] text-sm mt-1">
+                       Commercial Aircraft
+                    </p>
+
+                    <p class="text-gray-500 text-sm mt-3">
+                        Modern aircraft designed for safe and comfortable flights.
+                    </p>
+
+                </div>
+
+            </div>
+
+           <!-- Card 2 -->
+            <div class="bg-[#111111] rounded-xl shadow overflow-hidden group">
+
+                <div class="relative">
+ 
+                    <!-- image -->
+                  <img src="images/fleet2.jpeg"
+                  class="w-full h-56 object-cover">
+
+                    <div class="absolute inset-0 bg-black/90 
+                     flex items-center justify-center gap-4 
+                     opacity-0 group-hover:opacity-100 transition duraion-300">
+
+                        <a href="#" class="bg-white text-[#078ff3] w-8 h-8 flex items-center justify-center rounded-full transition hover:bg-[#056ec2] hover:text-white">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+
+                        <a href="#" class="bg-white text-[#078ff3] w-8 h-8 flex items-center justify-center rounded-full transition hover:bg-[#056ec2] hover:text-white">
+                           <i class="fa-brands fa-twitter"></i>
+                        </a>
+
+                        <a href="#" class="bg-white text-[#078ff3] w-8 h-8 flex items-center justify-center rounded-full transition hover:bg-[#056ec2] hover:text-white">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+                <!-- content -->
+                <div class="p-6 text-center">
+                   <h3 class="font-semibold text-lg">Airbus A320</h3>
+                   <p class="text-[#078ff3] text-sm mt-1">Passenger Aircraft</p>
+                    <p class="text-gray-500 text-sm mt-3">
+                      High performance aircraft with advanced aviation technology.
+                    </p>
+                </div>
+
+            </div>
+
+           <!-- Card 3 -->
+            <div class="bg-[#111111] rounded-xl shadow overflow-hidden group">
+
+                <div class="relative">
+                  <!-- image -->
+                  <img src="images/fleet3.jpeg"
+                  class="w-full h-56 object-cover">
+
+                    <div class="absolute inset-0 bg-black/90 
+                     flex items-center justify-center gap-4 
+                     opacity-0 group-hover:opacity-100 transition duraion-300">
+                        <a href="#" class="bg-white text-[#078ff3] w-8 h-8 flex items-center justify-center rounded-full transition hover:bg-[#056ec2] hover:text-white">
+                          <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+
+                        <a href="#" class="bg-white text-[#078ff3] w-8 h-8 flex items-center justify-center rounded-full transition hover:bg-[#056ec2] hover:text-white">
+                           <i class="fa-brands fa-twitter"></i>
+                        </a>
+
+                        <a href="#" class="bg-white text-[#078ff3] w-8 h-8 flex items-center justify-center rounded-full transition hover:bg-[#056ec2] hover:text-white">
+                           <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+                <!-- content -->
+                <div class="p-6 text-center">
+                  <h3 class="font-semibold text-lg">Private Jet</h3>
+                  <p class="text-[#078ff3] text-sm mt-1">Luxury Aircraft</p>
+                    <p class="text-gray-500 text-sm mt-3">
+                      Premium private jet for luxury and business travel.
+                    </p>
+                </div>
+
+            </div>
+
+           <!-- Card 4 -->
+            <div class="bg-[#111111] rounded-xl shadow overflow-hidden group">
+
+                <div class="relative">
+
+                  <!-- image -->
+                  <img src="images/fleet4.jpeg"
+                  class="w-full h-56 object-cover">
+
+                    <div class="absolute inset-0 bg-black/90
+                     flex items-center justify-center gap-4 
+                     opacity-0 group-hover:opacity-100 transition duraion-300">
+
+                        <a href="#" class="bg-white text-[#078ff3] w-8 h-8 flex items-center justify-center rounded-full transition hover:bg-[#056ec2] hover:text-white">
+                          <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+
+                        <a href="#" class="bg-white text-[#078ff3] w-8 h-8 flex items-center justify-center rounded-full transition hover:bg-[#056ec2] hover:text-white">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+
+                        <a href="#" class="bg-white text-[#078ff3] w-8 h-8 flex items-center justify-center rounded-full transition hover:bg-[#056ec2] hover:text-white">
+                           <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <!-- content -->
+                <div class="p-6 text-center">
+                  <h3 class="font-semibold text-lg">Cargo Aircraft</h3>
+                  <p class="text-[#078ff3] text-sm mt-1">Air Transport</p>
+                    <p class="text-gray-500 text-sm mt-3">
+                      Reliable cargo aircraft for global transportation.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section4>  
+    <!-- end section four -->
+    
+    
+    <!-- start section last -->
+    <div class="bg-black h-20"></div>
+
+    <footer class="py-18 text-white w-full">
+
+        <div class="max-w-6xl mx-auto px-6  grid md:grid-cols-2 gap-10">
+
+           <!-- Contact Form -->
+            <div class="bg-[#111111] p-8 rounded-2xl">
+
+                <h2 class="text-xl font-semibold mb-6">
+                  Contact Us
+                </h2>
+
+                <form class="space-y-5">
+
+                 <input 
+                 type="text"
+                 placeholder="Full Name"
+                 class="w-full bg-[#1a1a1a] p-4 rounded-lg border-[#056ec2] focus:border-[#056ec2] focus:outline-none focus:border-4">
+
+                 <input 
+                 type="email"
+                 placeholder="Email Address"
+                 class="w-full bg-[#1a1a1a] p-4 rounded-lg border-[#056ec2] focus:border-[#056ec2] focus:outline-none focus:border-4">
+
+                 <textarea 
+                 placeholder="Your message..."
+                 rows="5"
+                 class="w-full bg-[#1a1a1a] p-4 rounded-lg border-[#056ec2] focus:border-[#056ec2] focus:outline-none focus:border-4"></textarea>
+
+                 <button 
+                 class="w-full bg-[#078ff3] from-[#056ec2]  py-4 rounded-lg font-semibold hover:opacity-90 transition">
+                 Send Message
+                 </button>
+
+                </form>
+
+            </div>
+
+         
+            <div>
+
+                <h2 class="text-xl font-semibold mb-6">
+                  Contact Information
+                </h2>
+
+                <div class="space-y-6">
+
+                  <!-- Address -->
+                    <div class="flex items-center gap-4">
+
+                        <div class="bg-white p-2 rounded-lg">
+                          <i class="fa-solid fa-location-dot text-[#078ff3]"></i>
+                        </div>
+
+                        <div>
+                           <p class="text-gray-400 text-sm">Address</p>
+                           <p class="font-semibold">Cairo, Egypt</p>
+                        </div>
+
+                    </div>
+
+                   <!-- Phone -->
+                    <div class="flex items-center gap-4">
+
+                        <div class="bg-white p-2 rounded-lg">
+                          <i class="fa-solid fa-phone text-[#078ff3]"></i>
+                        </div>
+
+                        <div>
+                          <p class="text-gray-400 text-sm">Phone</p>
+                          <p class="font-semibold">+20 123 456 7890</p>
+                        </div>
+
+                    </div>
+
+                    <!-- Email -->
+                    <div class="flex items-center gap-4">
+
+                        <div class="bg-white p-2 rounded-lg">
+                          <i class="fa-solid fa-envelope text-[#078ff3]"></i>
+                        </div>
+
+                        <div>
+                          <p class="text-gray-400 text-sm">Email</p>
+                          <p class="font-semibold">support@skylineairways.com</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- cards -->
+                <div class="mt-8 
+                   bg-[#078ff3]  p-10 rounded-2xl text-center">
+                   <i class="fa-solid fa-plane-departure text-2xl mb-3"></i>
+
+                   <p class="text-gray-200 font-semibold">
+                        Book Your Flight
+                    </p>
+
+                    <p class="text-gray-300 text-sm mt-2">
+                       Reserve your flight quickly and easily with our airline services.
+                    </p> 
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="bg-black text-gray-400 py-6">
+
+            <div class="max-w-6xl mx-auto px-6">
+
+              
+              <div class="border-t border-white/10 mb-6"></div>
+
+                <!-- content -->
+                <div class="flex flex-col md:flex-row 
+                 justify-between items-center">
+
+                    <p class="text-sm">
+                     © 2026 Airline. All rights reserved.
+                    </p>
+
+                   <!-- icons -->
+                    <div class="flex gap-6 mt-4 md:mt-0">
+
+                     <i class="fa-brands fa-facebook-f hover:text-white transition cursor-pointer"></i>
+
+                     <i class="fa-brands fa-twitter hover:text-white transition cursor-pointer"></i>
+
+                     <i class="fa-brands fa-linkedin-in hover:text-white transition cursor-pointer"></i>
+
+                     <i class="fa-brands fa-instagram hover:text-white transition cursor-pointer"></i>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </footer>
+    <!-- <div class="bg-black h-20"></div> -->
+
+    <!-- end section last -->
+
+    <script>
+      const btn = document.getElementById("menuBtn");
+      const menu = document.getElementById("mobileMenu");
+
+      btn.addEventListener("click", () => {
+      menu.classList.toggle("hidden");
+       });
+    </script>
+</body>
+</html>
